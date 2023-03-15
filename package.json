@@ -9,6 +9,11 @@
     "lint": "next lint",
     "prepare": "husky install"
   },
+  "lint-staged": {
+    "src/**/*": [
+      "npm run lint --fix"
+    ]
+  },
   "dependencies": {
     "@types/node": "18.15.3",
     "@types/react": "18.0.28",
@@ -21,6 +26,7 @@
     "typescript": "4.9.5"
   },
   "devDependencies": {
-    "husky": "^8.0.3"
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.0"
   }
 }

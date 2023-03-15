@@ -9,8 +9,6 @@ type Props = {
   title: string
 }
 
-const foo = "teste"
-
 export default function Home({title = "React Avançado"}) {
   return (
     <>
